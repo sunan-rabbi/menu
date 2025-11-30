@@ -14,9 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Time management App | neuralbind",
-  description:
-    "Neuralbind’s Time Management app helps you organize your schedule, set goals, and boost productivity with smart tracking and reminders. Stay focused and make every minute count.",
+  title: "Restaurant Order Management",
+  description: "Restaurant Order Management",
 };
 
 
