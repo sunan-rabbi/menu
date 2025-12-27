@@ -1,9 +1,16 @@
 'use client';
 
-import { Zap, MapPin, CreditCard, Sparkles, Settings, Clock } from 'lucide-react';
+import { Zap, MapPin, CreditCard, Sparkles, Settings, Clock, LucideIcon } from 'lucide-react';
 
-const Service = () => {
-    const services = [
+// Factory Pattern Implementation
+interface ServiceItem {
+    title: string;
+    description: string;
+    icon: LucideIcon;
+}
+
+class ServiceFactory {
+    private static services: ServiceItem[] = [
         {
             title: 'Fast Delivery',
             description: 'Get your orders delivered within 30 minutes',
@@ -35,6 +42,18 @@ const Service = () => {
             icon: Clock,
         },
     ];
+
+    static createService(type: string): ServiceItem | undefined {
+        return this.services.find(service => service.title === type);
+    }
+
+    static getAllServices(): ServiceItem[] {
+        return this.services;
+    }
+}
+
+const Service = () => {
+    const services = ServiceFactory.getAllServices();
 
     return (
         <section id="services" className="py-20 bg-white">

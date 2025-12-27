@@ -1,4 +1,34 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Restaurant Order Management System
+
+A modern, responsive restaurant order management web application built with Next.js, React, and TypeScript.
+
+**🌐 Live Demo:** [https://restaurant-orvmjnypn-sunanrabbi1918gmailcoms-projects.vercel.app/menu](https://restaurant-orvmjnypn-sunanrabbi1918gmailcoms-projects.vercel.app/menu)
+
+**💻 GitHub Repository:** [https://github.com/sunan-rabbi/menu.git](https://github.com/sunan-rabbi/menu.git)
+
+---
+
+## Features
+
+- 🎨 Modern, responsive UI with Tailwind CSS
+- 📱 Mobile-first design with hamburger navigation
+- 🔍 Dynamic menu filtering by category
+- 🏭 Factory Pattern implementation for service management
+- 📦 Container/Presentational Pattern for clean architecture
+- ⚡ Fast performance with Next.js App Router
+- 🎯 TypeScript for type safety
+- 🌿 Vegetarian item indicators
+- ⭐ Rating system for menu items
+
+## Tech Stack
+
+- **Framework:** Next.js 16.1.1
+- **Frontend:** React 19.1.1, TypeScript 5
+- **Styling:** Tailwind CSS 4
+- **UI Components:** Radix UI
+- **Icons:** Lucide React
+- **State Management:** React Hooks
+- **Deployment:** Vercel
 
 ## Getting Started
 

@@ -1,0 +1,134 @@
+{
+  "menu": [
+    {
+      "id": 1,
+      "name": "Grilled Salmon",
+      "category": "Main Course",
+      "price": 24.99,
+      "description": "Fresh Atlantic salmon grilled to perfection with lemon butter sauce",
+      "image": "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=400&h=300&fit=crop",
+      "isVegetarian": false,
+      "rating": 4.8
+    },
+    {
+      "id": 2,
+      "name": "Margherita Pizza",
+      "category": "Pizza",
+      "price": 16.99,
+      "description": "Classic Italian pizza with fresh mozzarella, tomatoes, and basil",
+      "image": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=400&h=300&fit=crop",
+      "isVegetarian": true,
+      "rating": 4.7
+    },
+    {
+      "id": 3,
+      "name": "Caesar Salad",
+      "category": "Salads",
+      "price": 12.99,
+      "description": "Crisp romaine lettuce with parmesan, croutons, and Caesar dressing",
+      "image": "https://images.unsplash.com/photo-1546793665-c74683f339c1?w=400&h=300&fit=crop",
+      "isVegetarian": true,
+      "rating": 4.5
+    },
+    {
+      "id": 4,
+      "name": "Beef Burger",
+      "category": "Burgers",
+      "price": 18.99,
+      "description": "Juicy beef patty with lettuce, tomato, cheese, and special sauce",
+      "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&h=300&fit=crop",
+      "isVegetarian": false,
+      "rating": 4.9
+    },
+    {
+      "id": 5,
+      "name": "Chicken Tikka Masala",
+      "category": "Main Course",
+      "price": 19.99,
+      "description": "Tender chicken in creamy tomato sauce with aromatic spices",
+      "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&h=300&fit=crop",
+      "isVegetarian": false,
+      "rating": 4.6
+    },
+    {
+      "id": 6,
+      "name": "Vegetable Pasta",
+      "category": "Pasta",
+      "price": 15.99,
+      "description": "Fresh pasta with seasonal vegetables in garlic olive oil",
+      "image": "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=400&h=300&fit=crop",
+      "isVegetarian": true,
+      "rating": 4.4
+    },
+    {
+      "id": 7,
+      "name": "Chocolate Lava Cake",
+      "category": "Desserts",
+      "price": 9.99,
+      "description": "Warm chocolate cake with a molten center, served with vanilla ice cream",
+      "image": "https://images.unsplash.com/photo-1624353365286-3f8d62daad51?w=400&h=300&fit=crop",
+      "isVegetarian": true,
+      "rating": 4.9
+    },
+    {
+      "id": 8,
+      "name": "Shrimp Tacos",
+      "category": "Mexican",
+      "price": 17.99,
+      "description": "Grilled shrimp tacos with fresh salsa and avocado",
+      "image": "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=400&h=300&fit=crop",
+      "isVegetarian": false,
+      "rating": 4.7
+    },
+    {
+      "id": 9,
+      "name": "Greek Salad",
+      "category": "Salads",
+      "price": 13.99,
+      "description": "Fresh vegetables with feta cheese, olives, and olive oil dressing",
+      "image": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=400&h=300&fit=crop",
+      "isVegetarian": true,
+      "rating": 4.5
+    },
+    {
+      "id": 10,
+      "name": "BBQ Ribs",
+      "category": "Main Course",
+      "price": 26.99,
+      "description": "Slow-cooked pork ribs with tangy BBQ sauce and coleslaw",
+      "image": "https://images.unsplash.com/photo-1544025162-d76694265947?w=400&h=300&fit=crop",
+      "isVegetarian": false,
+      "rating": 4.8
+    },
+    {
+      "id": 11,
+      "name": "Sushi Platter",
+      "category": "Japanese",
+      "price": 29.99,
+      "description": "Assorted fresh sushi rolls with wasabi and ginger",
+      "image": "https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?w=400&h=300&fit=crop",
+      "isVegetarian": false,
+      "rating": 4.9
+    },
+    {
+      "id": 12,
+      "name": "Tiramisu",
+      "category": "Desserts",
+      "price": 8.99,
+      "description": "Classic Italian dessert with coffee-soaked ladyfingers and mascarpone",
+      "image": "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=400&h=300&fit=crop",
+      "isVegetarian": true,
+      "rating": 4.7
+    }
+  ],
+  "categories": [
+    { "id": 1, "name": "Main Course" },
+    { "id": 2, "name": "Pizza" },
+    { "id": 3, "name": "Salads" },
+    { "id": 4, "name": "Burgers" },
+    { "id": 5, "name": "Pasta" },
+    { "id": 6, "name": "Desserts" },
+    { "id": 7, "name": "Mexican" },
+    { "id": 8, "name": "Japanese" }
+  ]
+}

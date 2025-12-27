@@ -1,6 +1,9 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // Enable Turbopack configuration (empty config to silence the warning)
+  turbopack: {},
+
   webpack: (config: any) => {
     config.module.rules.push({
       test: /\.(pdf)$/,
@@ -12,9 +15,22 @@ const nextConfig = {
     return config;
   },
 
-  // Add this to allow images from Cloudinary
+  // Updated to use remotePatterns instead of deprecated domains
   images: {
-    domains: ['res.cloudinary.com', 'images.unsplash.com', 'localhost']
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'res.cloudinary.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+      },
+      {
+        protocol: 'http',
+        hostname: 'localhost',
+      },
+    ],
   },
 };
 
