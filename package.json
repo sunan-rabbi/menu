@@ -11,12 +11,9 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
-    "test:level1": "jest src/components/__tests__",
-    "test:level2": "jest src/app/menu/__tests__",
-    "test:e2e": "playwright test",
-    "test:e2e:ui": "playwright test --ui",
-    "test:e2e:headed": "playwright test --headed",
-    "test:all": "npm run test && npm run test:e2e",
+    "test:1": "jest src/components/__tests__",
+    "test:2": "jest src/app/menu/__tests__",
+    "test:3": "playwright test",
     "playwright:install": "playwright install"
   },
   "dependencies": {

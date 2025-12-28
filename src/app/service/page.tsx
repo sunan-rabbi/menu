@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 'use client';
 
 import { UtensilsCrossed, Truck, Calendar, Users } from 'lucide-react';
