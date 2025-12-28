@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { Star, Leaf } from 'lucide-react';
 
 interface MenuItem {
@@ -19,42 +20,44 @@ interface MenuItem {
 
 // Presentational Component - MenuCard (Pure UI)
 const MenuCard = ({ item }: { item: MenuItem }) => (
-    <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl">
-        <div className="relative h-48 overflow-hidden">
-            <Image
-                src={item.image}
-                alt={item.name}
-                width={400}
-                height={300}
-                className="w-full h-full object-cover"
-            />
-            {item.isVegetarian && (
-                <div className="absolute top-3 right-3 bg-green-500 text-white p-2 rounded-full">
-                    <Leaf className="w-5 h-5" />
-                </div>
-            )}
-        </div>
-        <div className="p-6">
-            <div className="flex justify-between items-start mb-2">
-                <h3 className="text-2xl font-bold text-gray-900">{item.name}</h3>
-                <span className="text-2xl font-bold text-teal-600">${item.price.toFixed(2)}</span>
+    <Link href={`/menu/${item.id}`}>
+        <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow cursor-pointer">
+            <div className="relative h-48 overflow-hidden">
+                <Image
+                    src={item.image}
+                    alt={item.name}
+                    width={400}
+                    height={300}
+                    className="w-full h-full object-cover"
+                />
+                {item.isVegetarian && (
+                    <div className="absolute top-3 right-3 bg-green-500 text-white p-2 rounded-full">
+                        <Leaf className="w-5 h-5" />
+                    </div>
+                )}
             </div>
-            <div className="flex items-center gap-2 mb-3">
-                <div className="flex items-center">
-                    <Star className="w-5 h-5 text-yellow-400 fill-yellow-400" />
-                    <span className="ml-1 text-gray-600 font-semibold">{item.rating}</span>
+            <div className="p-6">
+                <div className="flex justify-between items-start mb-2">
+                    <h3 className="text-2xl font-bold text-gray-900">{item.name}</h3>
+                    <span className="text-2xl font-bold text-teal-600">${item.price.toFixed(2)}</span>
                 </div>
-                <span className="text-gray-400">&quot;</span>
-                <span className="text-sm text-gray-500 bg-gray-100 px-3 py-1 rounded-full">
-                    {item.category}
-                </span>
+                <div className="flex items-center gap-2 mb-3">
+                    <div className="flex items-center">
+                        <Star className="w-5 h-5 text-yellow-400 fill-yellow-400" />
+                        <span className="ml-1 text-gray-600 font-semibold">{item.rating}</span>
+                    </div>
+                    <span className="text-gray-400">&quot;</span>
+                    <span className="text-sm text-gray-500 bg-gray-100 px-3 py-1 rounded-full">
+                        {item.category}
+                    </span>
+                </div>
+                <p className="text-gray-600 mb-4">{item.description}</p>
+                <button className="w-full bg-teal-600 text-white py-3 rounded-lg font-semibold hover:bg-teal-700">
+                    View Details
+                </button>
             </div>
-            <p className="text-gray-600 mb-4">{item.description}</p>
-            <button className="w-full bg-teal-600 text-white py-3 rounded-lg font-semibold hover:bg-teal-700">
-                Add to Cart
-            </button>
         </div>
-    </div>
+    </Link>
 );
 
 // Presentational Component - CategoryFilter (Pure UI)
