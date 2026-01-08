@@ -16,11 +16,10 @@ const Navbar = () => {
                     </div>
 
                     <div className="hidden md:flex space-x-8">
-                        <Link href="#home" className="text-gray-700 hover:text-teal-600">Home</Link>
+                        <Link href="/" className="text-gray-700 hover:text-teal-600">Home</Link>
                         <Link href="/menu" className="text-gray-700 hover:text-teal-600">Menu</Link>
-                        <Link href="#services" className="text-gray-700 hover:text-teal-600">Services</Link>
-                        <Link href="#orders" className="text-gray-700 hover:text-teal-600">Orders</Link>
-                        <Link href="#contact" className="text-gray-700 hover:text-teal-600">Contact</Link>
+                        <Link href="/service" className="text-gray-700 hover:text-teal-600">Services</Link>
+                        <Link href="/contact" className="text-gray-700 hover:text-teal-600">Contact</Link>
                     </div>
 
                     <div className="hidden md:flex items-center space-x-4">
@@ -47,11 +46,10 @@ const Navbar = () => {
             {isMenuOpen && (
                 <div className="md:hidden bg-white border-t">
                     <div className="px-2 pt-2 pb-3 space-y-1">
-                        <Link href="#home" className="block px-3 py-2 text-gray-700 hover:bg-teal-50 hover:text-teal-600 rounded-md">Home</Link>
+                        <Link href="/" className="block px-3 py-2 text-gray-700 hover:bg-teal-50 hover:text-teal-600 rounded-md">Home</Link>
                         <Link href="/menu" className="block px-3 py-2 text-gray-700 hover:bg-teal-50 hover:text-teal-600 rounded-md">Menu</Link>
-                        <Link href="#services" className="block px-3 py-2 text-gray-700 hover:bg-teal-50 hover:text-teal-600 rounded-md">Services</Link>
-                        <Link href="#orders" className="block px-3 py-2 text-gray-700 hover:bg-teal-50 hover:text-teal-600 rounded-md">Orders</Link>
-                        <Link href="#contact" className="block px-3 py-2 text-gray-700 hover:bg-teal-50 hover:text-teal-600 rounded-md">Contact</Link>
+                        <Link href="/service" className="block px-3 py-2 text-gray-700 hover:bg-teal-50 hover:text-teal-600 rounded-md">Services</Link>
+                        <Link href="/contact" className="block px-3 py-2 text-gray-700 hover:bg-teal-50 hover:text-teal-600 rounded-md">Contact</Link>
                         <button className="w-full text-left px-3 py-2 bg-teal-600 text-white rounded-md hover:bg-teal-700">
                             Order Now
                         </button>
